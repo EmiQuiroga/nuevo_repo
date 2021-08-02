@@ -1,0 +1,98 @@
+$gradientbg: linear-gradient(to right, #8e9aaf, #e6beae, #ebdbd2);
+$bodybg: rgb(244, 234, 250);
+$colorh1: white;
+$colorh2: white;
+$colorh3: #8e9aaf;
+$titlebackground: #8e9aaf;
+$fontfamily: "Lato", sans-serif;
+
+@import "header";
+@import "footer";
+@import "contacto";
+
+body {
+  background: $bodybg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: $fontfamily;
+}
+
+header,
+section,
+footer {
+  margin: 2%, 0%;
+  width: 100%;
+  font-family: $fontfamily;
+}
+
+h3 {
+  color: $colorh3;
+}
+
+h1 {
+  color: $colorh1;
+  size: xx-large;
+  text-align: center;
+  background: $titlebackground;
+  padding: 10px;
+}
+
+h2 {
+  color: $colorh2;
+  size: x-large;
+  text-align: center;
+  background: $titlebackground;
+  padding: 10px;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+li {
+  padding: 15px;
+}
+
+.card-body {
+  background: #eae0da;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+#clasesOnline {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#fotoTestimonio {
+  width: 150px;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px rgb(100, 100, 100);
+}
+
+.card-img-top:hover {
+  transform: scale(-1, 1);
+  transition: 2s;
+}
+
+section > article > form {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #8e9aaf;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
