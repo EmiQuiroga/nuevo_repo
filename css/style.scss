@@ -1,0 +1,102 @@
+
+$gradientbg: linear-gradient(to right, #8e9aaf, #e6beae, #ebdbd2);
+$bodybg: rgb(244, 234, 250);
+$colorh1: white;
+$colorh2: white;
+$colorh3: #8e9aaf;
+$titlebackground: #8e9aaf;
+$fontfamily: "Lato", sans-serif;
+$primary: #8e9aaf;
+
+$theme-colors: ("primary": $primary,);
+
+
+@import "header";
+@import "footer";
+@import "contacto";
+
+
+
+body {
+  background: $bodybg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: $fontfamily;
+}
+
+header, section, footer {
+  margin: 0%, 0%;
+  width: 100%;
+  font-family: $fontfamily;
+}
+
+h3 {
+  color: $colorh3;
+}
+
+h1 {
+  color: $colorh1;
+  size: xx-large;
+  text-align: center;
+  background: $titlebackground;
+  padding: 10px;
+}
+
+h2 {
+  color: $colorh2;
+  size: x-large;
+  text-align: center;
+  background: $titlebackground;
+  padding: 10px;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.negrita { font-weight: bolder;
+  color: black; }
+
+
+li {
+  padding: 15px;
+}
+
+div.card {border-style: none;
+margin-bottom: 1em;}
+
+div.container {margin-top: 1em;
+margin-bottom: 1em;}
+
+h5.card-title { text-align: center;
+text-transform: uppercase;
+font-weight: bold;}
+
+.btn{ align-self: center;
+}
+
+
+
+#carouselInicio {margin-top: -8px;}
+
+#quienSoy { width: 50%;
+  align-self: center;
+  margin-bottom: 2em;
+box-shadow: 5px 5px 10px $colorh3;
+}
+
+#quienSoy:hover {
+  opacity: .9;
+}
+
+
+#fotoTestimonio {
+  width: 150px;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px rgb(100, 100, 100);
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

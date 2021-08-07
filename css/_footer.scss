@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, #8e9aaf, #e6beae, #ebdbd2);
+    img {
+      width: 180px;
+    }
+  }
