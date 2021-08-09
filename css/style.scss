@@ -79,13 +79,12 @@ font-weight: bold;}
 }
 
 
-
 #carouselInicio {margin-top: -8px;}
 
-#quienSoy { width: 50%;
-  align-self: center;
-  margin-bottom: 2em;
-box-shadow: 5px 5px 10px $colorh3;
+#quienSoy {
+align-self: center;
+margin-bottom: 2em;
+box-shadow: 5px 5px 8px $colorh3;
 }
 
 #quienSoy:hover {
@@ -96,7 +95,7 @@ box-shadow: 5px 5px 10px $colorh3;
 #fotoTestimonio {
   width: 150px;
   border-radius: 100px;
-  box-shadow: 5px 5px 10px rgb(100, 100, 100);
+  box-shadow: 5px 5px 5px 5px $colorh3;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
