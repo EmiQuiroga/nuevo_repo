@@ -1,168 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Escuela Online de Yoga, Clases y Cursos">
-    <meta name="keywords" content="Yoga, Hatha Yoga, Clases, Bienestar, Meditación, Mindfullnes, Espiritualidad">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Escuela Online de Yoga, Clases y Cursos"
+    />
+    <meta
+      name="keywords"
+      content="Yoga, Hatha Yoga, Clases, Bienestar, Meditación, Mindfullnes, Espiritualidad"
+    />
+    <!--Este es el título de la página-->
     <title>Hoy Hago Yoga</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="shortcut icon" href="./assets/favicon.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.png" />
 
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Este es el encabezado del sitio-->
     <header>
-      <img src="./assets/nuevoLogo.png" alt="logo">
+      <!--Este es el logo-->
+      <img src="./assets/nuevoLogo.png" alt="logo" />
+      <!--Este es el menú de navegación-->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./html/quiensoy.html">Quién Soy</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./html/servicios.html" tabindex="-1" aria-disabled="true">Servicios</a>
+                <a
+                  class="nav-link"
+                  href="./html/servicios.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Servicios</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./html/testimonios.html" tabindex="-1" aria-disabled="true">Testimonios</a>
+                <a
+                  class="nav-link"
+                  href="./html/testimonios.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Testimonios</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./html/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                <a
+                  class="nav-link"
+                  href="./html/contacto.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
-        <div class="redes">
-            <a href="https://bit.ly/3iVQOvb">
-                <img class="redSocial" src="./assets/iconoIg.png" alt="instagram">
-            </a>
-            <a href="https://bit.ly/3BSbFbh">
-                <img class="redSocial" src="./assets/iconoFb.png" alt="facebook">
-            </a>
-        </div>
+      <!--Redes sociales-->
+      <div class="redes">
+        <a href="https://bit.ly/3iVQOvb">
+          <img class="redSocial" src="./assets/iconoIg.png" alt="instagram" />
+        </a>
+        <a href="https://bit.ly/3BSbFbh">
+          <img class="redSocial" src="./assets/iconoFb.png" alt="facebook" />
+        </a>
+      </div>
     </header>
     <h1>Hoy Hago Yoga</h1>
+    <!--Este es el carousel del inicio-->
     <div class="row" id="carouselInicio">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/fotoGaleriaInicio1.png" class="d-block w-100" alt="personas sonriendo">
+            <img
+              src="./assets/fotoGaleriaInicio1.png"
+              class="d-block w-100"
+              alt="personas sonriendo"
+            />
           </div>
           <div class="carousel-item">
-            <img src="./assets/fotoGaleriaInicio2.png" class="d-block w-100" alt="mujer haciendo yoga">
+            <img
+              src="./assets/fotoGaleriaInicio2.png"
+              class="d-block w-100"
+              alt="mujer haciendo yoga"
+            />
           </div>
           <div class="carousel-item">
-            <img src="./assets/fotoGaleriaInicio3.png" class="d-block w-100" alt="mujer haciendo yoga">
+            <img
+              src="./assets/fotoGaleriaInicio3.png"
+              class="d-block w-100"
+              alt="mujer haciendo yoga"
+            />
           </div>
         </div>
       </div>
     </div>
-    
-      <h2>Quién Soy</h2>
-      <div class="container">
+    <!--Sección de presentación-->
+    <h2>Quién Soy</h2>
+    <div class="container">
       <div class="card">
         <div class="card-body">
-          <p class="card-text"> <span class="negrita">Bienvenido/a a mi escuela online!</span> Soy Sandra Morello y me dedico a esta hermosa disciplina desde 2010. Todo comenzó cuando probé una clase de Yoga debido a mis dolores recurrentes de espalda. En ese momento me cambió la vida para siempre! Fue pisar el salón y ya pude sentir que estaba encontrando lo que de alguna manera venía buscando hace mucho tiempo. Desde entonces he practicado siempre y realizado múltiples cursos y formaciones dentro del mundo del Mindfullnes, la Meditación y el Yoga, para poder dedicarme plenamente a transmitir esta disciplina. Quiero compartir con vos todo lo que vengo transitando y aprendiendo, a través de distintas propuestas de clases online. Realmente espero que las clases y las meditaciones sean un aliado en tu día a día. <span class="negrita">Te invito a comenzar el viaje.</span></p>
+          <p class="card-text">
+            <span class="negrita">Bienvenido/a a mi escuela online!</span> Soy
+            Sandra Morello y me dedico a esta hermosa disciplina desde 2010.
+            Todo comenzó cuando probé una clase de Yoga debido a mis dolores
+            recurrentes de espalda. En ese momento me cambió la vida para
+            siempre! Fue pisar el salón y ya pude sentir que estaba encontrando
+            lo que de alguna manera venía buscando hace mucho tiempo. Desde
+            entonces he practicado siempre y realizado múltiples cursos y
+            formaciones dentro del mundo del Mindfullnes, la Meditación y el
+            Yoga, para poder dedicarme plenamente a transmitir esta disciplina.
+            Quiero compartir con vos todo lo que vengo transitando y
+            aprendiendo, a través de distintas propuestas de clases online.
+            Realmente espero que las clases y las meditaciones sean un aliado en
+            tu día a día.
+            <span class="negrita">Te invito a comenzar el viaje.</span>
+          </p>
         </div>
-        <img id="quienSoy" src="assets/quienSoy.jpg" class="card-img-bottom" alt="mujer">
+        <img
+          id="quienSoy"
+          src="assets/quienSoy.jpg"
+          class="card-img-bottom"
+          alt="mujer"
+        />
       </div>
     </div>
-
+    <!--Sección de servicios-->
     <h2>Programas online</h2>
 
-    
     <div class="container">
-    <div class="row">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <img
+              src="assets/clasesOnline.png"
+              class="card-img-top"
+              alt="mujer haciendo yoga"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mes de clases online</h5>
+              <p class="card-text">
+                Te invito a formar parte de la membresía online, un espacio de
+                clases regulares, con nuevo contenido cada mes. Clases de todos
+                los estilos para que puedas elegir según tu necesidad del
+                momento.
+              </p>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <a
+                  href="./html/contacto.html"
+                  class="btn btn-outline-primary btn-lg"
+                  >Suscribirme</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="card">
-            <img src="assets/clasesOnline.png" class="card-img-top" alt="mujer haciendo yoga">
-            <div class="card-body">
-              <h5 class="card-title">Mes de clases online</h5>
-              <p class="card-text">Te invito a formar parte de la membresía online, un espacio de clases regulares, con nuevo contenido cada mes. Clases de todos los estilos para que puedas elegir según tu necesidad del momento.</p>
-              <div class="d-grid gap-2 col-6 mx-auto">
-                <a href="./html/contacto.html" class="btn btn-outline-primary btn-lg">Suscribirme</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-          <div class="col-sm-12 col-md-6 col-lg-6" >
-            <div class="card">
-            <img src="assets/tallerdeRespiracion.png" class="card-img-top" alt="mujer respirando">
+            <img
+              src="assets/tallerdeRespiracion.png"
+              class="card-img-top"
+              alt="mujer respirando"
+            />
             <div class="card-body">
               <h5 class="card-title">Taller de respiración</h5>
-              <p class="card-text">En este taller te voy a guiar y acompañar en el mundo de la respiración consciente. A través de clases y meditaciones guiadas, pensadas para que puedas ir hacia tu interior y encontrar la calma.</p>
+              <p class="card-text">
+                En este taller te voy a guiar y acompañar en el mundo de la
+                respiración consciente. A través de clases y meditaciones
+                guiadas, pensadas para que puedas ir hacia tu interior y
+                encontrar la calma.
+              </p>
               <div class="d-grid gap-2 col-6 mx-auto">
-                <a href="./html/contacto.html" class="btn btn-outline-primary btn-lg">Suscribirme</a>
+                <a
+                  href="./html/contacto.html"
+                  class="btn btn-outline-primary btn-lg"
+                  >Suscribirme</a
+                >
               </div>
             </div>
           </div>
         </div>
-    
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="card">
-            <img src="assets/yogaRestaurativo.png" class="card-img-top" alt="mujer haciendo yoga">
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <img
+              src="assets/yogaRestaurativo.png"
+              class="card-img-top"
+              alt="mujer haciendo yoga"
+            />
             <div class="card-body">
               <h5 class="card-title">Curso de yoga restaurativo</h5>
-              <p class="card-text">En este curso te propongo una serie de clases enfocadas en la relajación profunda del sistema nervioso, a través de posturas que no conllevan ningún esfuerzo, apoyándonos en el uso de elementos.</p>
+              <p class="card-text">
+                En este curso te propongo una serie de clases enfocadas en la
+                relajación profunda del sistema nervioso, a través de posturas
+                que no conllevan ningún esfuerzo, apoyándonos en el uso de
+                elementos.
+              </p>
 
               <div class="d-grid gap-2 col-6 mx-auto">
-                <a href="./html/contacto.html" class="btn btn-outline-primary btn-lg">Suscribirme</a>
+                <a
+                  href="./html/contacto.html"
+                  class="btn btn-outline-primary btn-lg"
+                  >Suscribirme</a
+                >
               </div>
-
-              
             </div>
           </div>
         </div>
-    
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="card">
-            <img src="assets/calmayMeditacion.png" class="card-img-top" alt="mujer haciendo yoga">
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <img
+              src="assets/calmayMeditacion.png"
+              class="card-img-top"
+              alt="mujer haciendo yoga"
+            />
             <div class="card-body">
               <h5 class="card-title">Calma y meditación</h5>
-              <p class="card-text">Este es un programa de meditaciones guiadas, con más de cincuenta audios en alta calidad y gran variedad de propuestas. Meditaciones para comenzar el día, para hacer pausas conscientes durante la rutina y para dormir.</p>
+              <p class="card-text">
+                Este es un programa de meditaciones guiadas, con más de
+                cincuenta audios en alta calidad y gran variedad de propuestas.
+                Meditaciones para comenzar el día, para hacer pausas conscientes
+                durante la rutina y para dormir.
+              </p>
               <div class="d-grid gap-2 col-6 mx-auto">
-                <a href="./html/contacto.html" class="btn btn-outline-primary btn-lg">Suscribirme</a>
+                <a
+                  href="./html/contacto.html"
+                  class="btn btn-outline-primary btn-lg"
+                  >Suscribirme</a
+                >
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
 
+    <!--Este es el footer-->
     <footer>
-        <img src="./assets/nuevoLogo.png" alt="logo">
-       
-            <div class="redes">
-                <a href="https://bit.ly/3iVQOvb">
-                    <img class="redSocial" src="./assets/iconoIg.png" alt="instagram">
-                </a>
-                <a href="https://bit.ly/3BSbFbh">
-                    <img class="redSocial" src="./assets/iconoFb.png" alt="facebook">
-                </a>
-            </div>
-    
-    </footer>   
+      <img src="./assets/nuevoLogo.png" alt="logo" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <div class="redes">
+        <a href="https://bit.ly/3iVQOvb">
+          <img class="redSocial" src="./assets/iconoIg.png" alt="instagram" />
+        </a>
+        <a href="https://bit.ly/3BSbFbh">
+          <img class="redSocial" src="./assets/iconoFb.png" alt="facebook" />
+        </a>
+      </div>
+    </footer>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-
