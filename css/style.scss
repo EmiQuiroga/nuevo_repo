@@ -101,6 +101,12 @@ h5.card-title {
   opacity: 0.9;
 }
 
+#ebook {
+  box-shadow: 5px 5px 8px $colorh3;
+}
+
+#ebook:hover { transform: scale(1.2,1.2);}
+
 #fotoTestimonio {
   width: 150px;
   border-radius: 100px;

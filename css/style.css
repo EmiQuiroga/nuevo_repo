@@ -273,6 +273,16 @@ h5.card-title, .card-title.h5 {
   opacity: 0.9;
 }
 
+#ebook {
+  -webkit-box-shadow: 5px 5px 8px #8e9aaf;
+          box-shadow: 5px 5px 8px #8e9aaf;
+}
+
+#ebook:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
 #fotoTestimonio {
   width: 150px;
   border-radius: 100px;
