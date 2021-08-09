@@ -50,7 +50,7 @@ a.nav-link:hover {
   text-decoration: none;
   text-transform: capitalize;
   border: 2px solid white;
-  background-color: #8E9AAF;
+  background-color: #8e9aaf;
   padding: 10px;
   border-radius: 30px;
   text-align: center;
@@ -58,7 +58,7 @@ a.nav-link:hover {
 
 .nav-link:hover {
   background-color: white;
-  border-color: #8E9AAF;
+  border-color: #8e9aaf;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -92,8 +92,12 @@ footer img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .redSocial {
@@ -139,8 +143,8 @@ footer img {
       justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .formContacto {
@@ -157,14 +161,18 @@ footer img {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  border: solid 4px #e4d4c1;
+  border: solid 2px #8e9aaf;
   border-radius: 16px;
   padding: 15px;
-  background-color: #8e9aaf48;
+  background-color: #ebdbd2;
 }
 
 .medioContacto {
-  padding: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  padding: 20px;
 }
 
 body {
@@ -182,7 +190,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-header, section, footer {
+header,
+section,
+footer {
   margin: 0%, 0%;
   width: 100%;
   font-family: "Lato", sans-serif;
@@ -250,6 +260,7 @@ h5.card-title, .card-title.h5 {
 }
 
 #quienSoy {
+  width: 70%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -259,7 +270,7 @@ h5.card-title, .card-title.h5 {
 }
 
 #quienSoy:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 #fotoTestimonio {

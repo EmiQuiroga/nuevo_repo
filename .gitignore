@@ -1,1 +1,2 @@
-/node_modules/bootstrap
+.gitignore
+/node_modules

@@ -1,21 +1,20 @@
-
 $gradientbg: linear-gradient(to right, #8e9aaf, #e6beae, #ebdbd2);
 $bodybg: rgb(244, 234, 250);
 $colorh1: white;
 $colorh2: white;
 $colorh3: #8e9aaf;
+$colorbg: #ebdbd2;
 $titlebackground: #8e9aaf;
 $fontfamily: "Lato", sans-serif;
 $primary: #8e9aaf;
 
-$theme-colors: ("primary": $primary,);
-
+$theme-colors: (
+  "primary": $primary,
+);
 
 @import "header";
 @import "footer";
 @import "contacto";
-
-
 
 body {
   background: $bodybg;
@@ -25,7 +24,9 @@ body {
   font-family: $fontfamily;
 }
 
-header, section, footer {
+header,
+section,
+footer {
   margin: 0%, 0%;
   width: 100%;
   font-family: $fontfamily;
@@ -57,37 +58,47 @@ p {
   margin-top: 20px;
 }
 
-.negrita { font-weight: bolder;
-  color: black; }
-
-
-li {
-  padding: 15px;
+.negrita {
+  font-weight: bolder;
+  color: black;
 }
 
-div.card {border-style: none;
-margin-bottom: 1em;}
-
-div.container {margin-top: 1em;
-margin-bottom: 1em;}
-
-h5.card-title { text-align: center;
-text-transform: uppercase;
-font-weight: bold;}
-
-.btn{ align-self: center;
+li { padding: 15px;
 }
 
+div.card {
+  border-style: none;
+  margin-bottom: 1em;
+}
 
-#carouselInicio {margin-top: -8px;}
+div.container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
-#quienSoy { width: 60%;
-align-self: center;
-margin-bottom: 2em;
-box-shadow: 5px 5px 8px $colorh3;}
+h5.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn {
+  align-self: center;
+}
+
+#carouselInicio {
+  margin-top: -8px;
+}
+
+#quienSoy {
+  width: 70%;
+  align-self: center;
+  margin-bottom: 2em;
+  box-shadow: 5px 5px 8px $colorh3;
+}
 
 #quienSoy:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 #fotoTestimonio {
