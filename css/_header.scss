@@ -21,11 +21,7 @@ header {
 }
 
 
-a.nav-link { color: white !important;
-}
 
-a.nav-link:hover{ color: #70798a !important;
-}
 
 .navbar-light .navbar-nav .navbar-light .navbar-nav .show>.nav-link { background-color: white;
     color: #70798a !important;
@@ -33,6 +29,11 @@ a.nav-link:hover{ color: #70798a !important;
 }
 
 
+a.nav-link { color: white !important;
+}
+
+a.nav-link:hover{color: #70798a !important;
+}
 .nav-link  {
     font-size: 18px;
     font-weight: bold;
@@ -44,6 +45,7 @@ a.nav-link:hover{ color: #70798a !important;
     border-radius: 30px;
     text-align: center;
 }
+
 
 .nav-link:hover { background-color: white;
     border-color:#8E9AAF ;

@@ -30,18 +30,18 @@ header img {
   border-color: #70798a;
 }
 
+.navbar-light .navbar-nav .navbar-light .navbar-nav .show > .nav-link {
+  background-color: white;
+  color: #70798a !important;
+  border-color: #70798a;
+}
+
 a.nav-link {
   color: white !important;
 }
 
 a.nav-link:hover {
   color: #70798a !important;
-}
-
-.navbar-light .navbar-nav .navbar-light .navbar-nav .show > .nav-link {
-  background-color: white;
-  color: #70798a !important;
-  border-color: #70798a;
 }
 
 .nav-link {
@@ -104,6 +104,13 @@ footer img {
   margin: 10px;
 }
 
+.redSocial:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
 .redSocialContacto {
   width: 40px;
   padding: 6px;
@@ -111,13 +118,6 @@ footer img {
   background-color: white;
   border: solid 2px #8e9aaf;
   margin: 10px;
-}
-
-.redSocial:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
 }
 
 .redSocialContacto:hover {
@@ -160,10 +160,7 @@ footer img {
   border: solid 4px #e4d4c1;
   border-radius: 16px;
   padding: 15px;
-  color: black;
-  font-size: 20px;
-  font-weight: 700;
-  background-color: #8e9aaf;
+  background-color: #8e9aaf48;
 }
 
 .medioContacto {
@@ -253,13 +250,12 @@ h5.card-title, .card-title.h5 {
 }
 
 #quienSoy {
-  width: 50%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: 2em;
-  -webkit-box-shadow: 5px 5px 10px #8e9aaf;
-          box-shadow: 5px 5px 10px #8e9aaf;
+  -webkit-box-shadow: 5px 5px 8px #8e9aaf;
+          box-shadow: 5px 5px 8px #8e9aaf;
 }
 
 #quienSoy:hover {
@@ -269,8 +265,8 @@ h5.card-title, .card-title.h5 {
 #fotoTestimonio {
   width: 150px;
   border-radius: 100px;
-  -webkit-box-shadow: 5px 5px 10px #646464;
-          box-shadow: 5px 5px 10px #646464;
+  -webkit-box-shadow: 5px 5px 8px #8e9aaf;
+          box-shadow: 5px 5px 8px #8e9aaf;
 }
 
 /*!
