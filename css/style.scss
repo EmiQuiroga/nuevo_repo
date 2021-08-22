@@ -80,11 +80,6 @@ li { padding: 0.938rem;
 
 div.card {
   border-style: none;
-  margin-bottom: 1em;
-}
-
-
-div.container {
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -132,13 +127,27 @@ h5.card-title {
 
 @media (min-width:768px){
   #copyright { font-size: large;
-   text-align: left;}
+   text-align: center;}
 }
 
-@media (min-width:768px){
-  #testimonios { 
-   align-content: center;}
+@media (max-width:768px) {
+#quienSoy {
+  width: 90%;
 }
+#testimonios { 
+ justify-items: center;}
+
+p {
+  font-size: 1rem;
+}
+header img {
+  width: 9.375rem;
+}
+footer img {
+  width: 6.25rem;
+}
+}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
