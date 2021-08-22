@@ -31,12 +31,18 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
   </head>
   <body>
     <!--Este es el encabezado del sitio-->
     <header>
       <!--Este es el logo-->
-      <img src="./assets/nuevoLogo.png" alt="logo" />
+      <a href="./index.html"><img src="./assets/nuevoLogo.png" alt="logo" /></a>
+
       <!--Este es el menú de navegación-->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -102,7 +108,8 @@
         </a>
       </div>
     </header>
-    <h1>Hoy Hago Yoga</h1>
+   
+   <h1>Hoy Hago Yoga</h1>
     <!--Este es el carousel del inicio-->
     <div class="row" id="carouselInicio">
       <div
@@ -141,21 +148,26 @@
       <div class="card">
         <div class="card-body">
           <p class="card-text">
-            <span class="negrita">Bienvenido/a a mi escuela online!</span> Soy
-            Sandra Morello y me dedico a esta hermosa disciplina desde 2010.
-            Todo comenzó cuando probé una clase de Yoga debido a mis dolores
-            recurrentes de espalda. En ese momento me cambió la vida para
-            siempre! Fue pisar el salón y ya pude sentir que estaba encontrando
-            lo que de alguna manera venía buscando hace mucho tiempo. Desde
-            entonces he practicado siempre y realizado múltiples cursos y
-            formaciones dentro del mundo del Mindfullnes, la Meditación y el
-            Yoga, para poder dedicarme plenamente a transmitir esta disciplina.
-            Quiero compartir con vos todo lo que vengo transitando y
-            aprendiendo, a través de distintas propuestas de clases online.
-            Realmente espero que las clases y las meditaciones sean un aliado en
-            tu día a día.
-            <span class="negrita">Te invito a comenzar el viaje.</span>
+            <span class="negrita">Bienvenido/a a mi escuela online!</span>
           </p>
+            <p class="card-text">
+              Soy Sandra Morello y me dedico a esta hermosa disciplina desde 2010.
+              Todo comenzó cuando probé una clase de Yoga debido a mis dolores
+              recurrentes de espalda. En ese momento me cambió la vida para
+              siempre! Fue pisar el salón y ya pude sentir que estaba encontrando
+              lo que de alguna manera venía buscando hace mucho tiempo. Desde
+              entonces he practicado siempre y realizado múltiples cursos y
+              formaciones dentro del mundo del Mindfullnes, la Meditación y el
+              Yoga, para poder dedicarme plenamente a transmitir esta disciplina.
+              Quiero compartir con vos todo lo que vengo transitando y
+              aprendiendo, a través de distintas propuestas de clases online.
+              Realmente espero que las clases y las meditaciones sean un aliado en
+              tu día a día.
+            </p>
+            <p class="card-text">
+              <span class="negrita">¡Te invito a comenzar el viaje!</span>
+            </p>
+          
         </div>
         <img
           id="quienSoy"
@@ -171,7 +183,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="card">
+          <div class="card" id="servicios">
             <img
               src="assets/clasesOnline.png"
               class="card-img-top"
@@ -197,7 +209,7 @@
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="card">
+          <div class="card" id="servicios">
             <img
               src="assets/tallerdeRespiracion.png"
               class="card-img-top"
@@ -223,7 +235,7 @@
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="card">
+          <div class="card" id="servicios">
             <img
               src="assets/yogaRestaurativo.png"
               class="card-img-top"
@@ -250,7 +262,7 @@
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="card">
+          <div class="card" id="servicios">
             <img
               src="assets/calmayMeditacion.png"
               class="card-img-top"
@@ -279,8 +291,11 @@
 
     <!--Este es el footer-->
     <footer>
+      <!--Este es el logo del footer-->
       <img src="./assets/nuevoLogo.png" alt="logo" />
-
+      <!--Este es el copyright-->
+      <div id="copyright">Copyright&copy; 2021 - Hoy Hago Yoga</div>
+      <!--Esta es la sección de redes sociales-->
       <div class="redes">
         <a href="https://bit.ly/3iVQOvb">
           <img class="redSocial" src="./assets/iconoIg.png" alt="instagram" />
@@ -301,5 +316,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script src="js/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>
+
   </body>
 </html>

@@ -5,6 +5,12 @@ footer {
   align-items: center;
   background-image: linear-gradient(to left, #8e9aaf, #e6beae, #ebdbd2);
   img {
-    width: 180px;
+    width: 11.25rem;
+  }
+}
+
+@media (max-width:768px){
+  footer img {
+    width: 6.25rem;
   }
 }

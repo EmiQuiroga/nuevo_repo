@@ -16,6 +16,22 @@ $theme-colors: (
 @import "footer";
 @import "contacto";
 
+@mixin boxShadow { 
+  box-shadow:  0px 10px 10px -6px $colorh3;
+}
+
+@mixin boxShadowCard { 
+  box-shadow:  0px 0px 5px 1px $colorh3;
+  border-radius: 8px;
+  transform: scale(0.9);
+  transition: 1.6s;
+}
+
+@mixin bgtitulo {  text-align: center;
+  background: $titlebackground;
+  padding: 0.625rem;
+}
+
 body {
   background: $bodybg;
   display: flex;
@@ -38,38 +54,35 @@ h3 {
 
 h1 {
   color: $colorh1;
-  size: xx-large;
-  text-align: center;
-  background: $titlebackground;
-  padding: 10px;
+  size: x-large;
+  @include bgtitulo;
 }
 
 h2 {
   color: $colorh2;
   size: x-large;
-  text-align: center;
-  background: $titlebackground;
-  padding: 10px;
+  @include bgtitulo;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.2rem;
   text-align: center;
-  margin-top: 20px;
 }
 
 .negrita {
+  font-size: 1.3rem;
   font-weight: bolder;
   color: black;
 }
 
-li { padding: 15px;
+li { padding: 0.938rem;
 }
 
 div.card {
   border-style: none;
   margin-bottom: 1em;
 }
+
 
 div.container {
   margin-top: 1em;
@@ -86,31 +99,46 @@ h5.card-title {
   align-self: center;
 }
 
+#servicios {
+  @include boxShadow;
+}
+
+#servicios:hover {
+  @include boxShadowCard;
+}
+
 #carouselInicio {
-  margin-top: -8px;
+  margin-top: -0.5rem;
 }
 
 #quienSoy {
-  width: 70%;
+  width: 50%;
   align-self: center;
   margin-bottom: 2em;
-  box-shadow: 5px 5px 8px $colorh3;
+  border-radius: 10px;
+  @include boxShadow;
 }
 
 #quienSoy:hover {
   opacity: 0.9;
+  transition: 1s;
 }
-
-#ebook {
-  box-shadow: 5px 5px 8px $colorh3;
-}
-
-#ebook:hover { transform: scale(1.2,1.2);}
 
 #fotoTestimonio {
-  width: 150px;
-  border-radius: 100px;
-  box-shadow: 5px 5px 8px $colorh3;
+  width: 9.375rem;
+  border-radius: 6.25rem;
+  @include boxShadow;
+}
+
+@media (min-width:768px){
+  #copyright { font-size: large;
+   text-align: left;}
+}
+
+@media (min-width:768px){
+  #testimonios { 
+   align-content: center;}
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
