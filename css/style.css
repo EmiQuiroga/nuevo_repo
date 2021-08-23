@@ -38,7 +38,7 @@ a.nav-link:hover {
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
-  border: 0.130rem solid white;
+  border: 0.13rem solid white;
   background-color: #8e9aaf;
   padding: 0.625rem;
   border-radius: 1.875rem;
@@ -50,6 +50,12 @@ a.nav-link:hover {
   border-color: #8e9aaf;
   -webkit-transition: 1.5s;
   transition: 1.5s;
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 9rem;
+  }
 }
 
 footer {
@@ -71,6 +77,12 @@ footer {
 
 footer img {
   width: 11.25rem;
+}
+
+@media (max-width: 768px) {
+  footer img {
+    width: 6.25rem;
+  }
 }
 
 .redes {
@@ -140,13 +152,6 @@ footer img {
   padding: 1.25rem;
 }
 
-@media (max-width: 768px) {
-  footer .redSocial {
-    width: 1.8rem;
-    margin: 0.4em;
-  }
-}
-
 body {
   background: #f4eafa;
   display: -webkit-box;
@@ -170,10 +175,6 @@ footer {
   font-family: "Lato", sans-serif;
 }
 
-h3, .h3 {
-  color: #8e9aaf;
-}
-
 h1, .h1 {
   color: white;
   size: x-large;
@@ -188,6 +189,10 @@ h2, .h2 {
   text-align: center;
   background: #8e9aaf;
   padding: 0.625rem;
+}
+
+h3, .h3 {
+  color: #8e9aaf;
 }
 
 p {
@@ -284,15 +289,13 @@ h5.card-title, .card-title.h5 {
   p {
     font-size: 1rem;
   }
-  header img {
-    width: 9.375rem;
-  }
-  footer img {
-    width: 6.25rem;
-  }
   #copyright {
     font-size: small;
     text-align: center;
+  }
+  .redSocial {
+    width: 1.8rem;
+    margin: 0.4em;
   }
 }
 

@@ -9,8 +9,7 @@ header {
   }
 }
 
-
-button.navbar-toggler{
+button.navbar-toggler {
   color: #70798a;
   background-color: white;
   border: solid 0.188rem;
@@ -28,7 +27,7 @@ a.nav-link:hover {
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
-  border: 0.130rem solid white;
+  border: 0.13rem solid white;
   background-color: #8e9aaf;
   padding: 0.625rem;
   border-radius: 1.875rem;
@@ -39,4 +38,10 @@ a.nav-link:hover {
   background-color: white;
   border-color: #8e9aaf;
   transition: 1.5s;
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 9rem;
+  }
 }

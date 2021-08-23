@@ -49,10 +49,6 @@ footer {
   font-family: $fontfamily;
 }
 
-h3 {
-  color: $colorh3;
-}
-
 h1 {
   color: $colorh1;
   size: x-large;
@@ -63,6 +59,10 @@ h2 {
   color: $colorh2;
   size: x-large;
   @include bgtitulo;
+}
+
+h3 {
+  color: $colorh3;
 }
 
 p {
@@ -90,9 +90,6 @@ div.container {
   margin-top: 1.5em;
 }
 
-
-
-
 h5.card-title {
   text-align: center;
   text-transform: uppercase;
@@ -102,7 +99,6 @@ h5.card-title {
 .btn {
   align-self: center;
 }
-
 
 #servicios {
   @include boxShadow;
@@ -150,15 +146,15 @@ h5.card-title {
   p {
     font-size: 1rem;
   }
-  header img {
-    width: 9.375rem;
-  }
-  footer img {
-    width: 6.25rem;
-  }
+
   #copyright {
     font-size: small;
     text-align: center;
+  }
+
+  .redSocial {
+    width: 1.8rem;
+    margin: 0.4em;
   }
 }
 
