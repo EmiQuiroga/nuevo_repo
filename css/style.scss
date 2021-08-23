@@ -16,18 +16,19 @@ $theme-colors: (
 @import "footer";
 @import "contacto";
 
-@mixin boxShadow { 
-  box-shadow:  0px 10px 10px -6px $colorh3;
+@mixin boxShadow {
+  box-shadow: 0px 10px 10px -6px $colorh3;
 }
 
-@mixin boxShadowCard { 
-  box-shadow:  0px 0px 5px 1px $colorh3;
+@mixin boxShadowCard {
+  box-shadow: 0px 0px 5px 1px $colorh3;
   border-radius: 8px;
   transform: scale(0.9);
   transition: 1.6s;
 }
 
-@mixin bgtitulo {  text-align: center;
+@mixin bgtitulo {
+  text-align: center;
   background: $titlebackground;
   padding: 0.625rem;
 }
@@ -75,7 +76,8 @@ p {
   color: black;
 }
 
-li { padding: 0.938rem;
+li {
+  padding: 0.938rem;
 }
 
 div.card {
@@ -93,6 +95,7 @@ h5.card-title {
 .btn {
   align-self: center;
 }
+
 
 #servicios {
   @include boxShadow;
@@ -125,29 +128,34 @@ h5.card-title {
   @include boxShadow;
 }
 
-@media (min-width:768px){
-  #copyright { font-size: large;
-   text-align: center;}
+@media (min-width: 768px) {
+  #copyright {
+    font-size: large;
+    text-align: center;
+  }
 }
 
-@media (max-width:768px) {
-#quienSoy {
-  width: 90%;
-}
-#testimonios { 
- justify-items: center;}
+@media (max-width: 768px) {
+  #quienSoy {
+    width: 90%;
+  }
+  #testimonios {
+    justify-content: center;
+  }
 
-p {
-  font-size: 1rem;
+  p {
+    font-size: 1rem;
+  }
+  header img {
+    width: 9.375rem;
+  }
+  footer img {
+    width: 6.25rem;
+  }
+  #copyright {
+    font-size: small;
+    text-align: center;
+  }
 }
-header img {
-  width: 9.375rem;
-}
-footer img {
-  width: 6.25rem;
-}
-}
-
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
