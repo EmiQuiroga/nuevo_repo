@@ -1,10 +1,7 @@
 $gradientbg: linear-gradient(to right, #8e9aaf, #e6beae, #ebdbd2);
 $bodybg: rgb(244, 234, 250);
 $colorh1: white;
-$colorh2: white;
-$colorh3: #8e9aaf;
 $colorbg: #ebdbd2;
-$titlebackground: #8e9aaf;
 $fontfamily: "Lato", sans-serif;
 $primary: #8e9aaf;
 
@@ -17,11 +14,11 @@ $theme-colors: (
 @import "contacto";
 
 @mixin boxShadow {
-  box-shadow: 0px 10px 10px -6px $colorh3;
+  box-shadow: 0px 10px 10px -6px $primary;
 }
 
 @mixin boxShadowCard {
-  box-shadow: 0px 0px 5px 1px $colorh3;
+  box-shadow: 0px 0px 5px 1px $primary;
   border-radius: 8px;
   transform: scale(0.9);
   transition: 1.6s;
@@ -29,7 +26,7 @@ $theme-colors: (
 
 @mixin bgtitulo {
   text-align: center;
-  background: $titlebackground;
+  background: $primary;
   padding: 0.625rem;
 }
 
@@ -52,17 +49,19 @@ footer {
 h1 {
   color: $colorh1;
   size: x-large;
+  font-weight: 500;
   @include bgtitulo;
 }
 
 h2 {
-  color: $colorh2;
-  size: x-large;
+  color: $colorh1;
+  size: large;
+  font-weight: 400;
   @include bgtitulo;
 }
 
 h3 {
-  color: $colorh3;
+  color: $primary;
 }
 
 p {
@@ -110,6 +109,7 @@ h5.card-title {
 
 #carouselInicio {
   margin-top: -0.5rem;
+  pointer-events: none;
 }
 
 #quienSoy {
@@ -129,6 +129,10 @@ h5.card-title {
   width: 9.375rem;
   border-radius: 6.25rem;
   @include boxShadow;
+}
+
+#accordionExample {
+  margin-bottom: 3em;
 }
 
 @media (min-width: 768px) {
